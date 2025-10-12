@@ -1,4 +1,4 @@
-import './App.css'
+import './App.css';
 import ErrorBoundary from './components/ErrorBoundary'
 import HeroSection from './components/HeroSection/HeroSection'
 
