@@ -1,14 +1,16 @@
 import "./HeroSection.css";
 import Traverler1IMG from "../../assets/images/traveler1.png";
+import PlaneIMG from "../../assets/images/plane.png"
 import DecoreBG from "../../assets/images/Decore.png";
 import { FaPlay } from "react-icons/fa";
 
 function HeroSection() {
   return (
     <section className="Hero-Section">
-      
       <div className="Hero-Background" style={{ backgroundImage: `url(${DecoreBG})` }}></div>
       <div className="Hero-div">
+
+        {/* -----Navbar Starts------- */}
         <nav className="navbar">
           <ul>
             <li className=" logo">
@@ -50,11 +52,11 @@ function HeroSection() {
             <li className="nav-item">Flight</li>
             <li className="nav-item">Bookings</li>
             <li className="nav-item">Login</li>
-            <li className="nav-item signUp-btn">
-              <button>Sign Up</button>
+            <li className="nav-item ">
+              <button id="signUp-btn">Sign Up</button>
             </li>
-            <li className="nav-item drop-down">
-              <select name="" id="">
+            <li className="nav-item ">
+              <select name="" id="drop-down">
                 <option value="0">En</option>
                 <option value="0">Ur</option>
                 <option value="0">Ar</option>
@@ -64,8 +66,11 @@ function HeroSection() {
             </li>
           </ul>
         </nav>
+        {/* -----Navbar Ends------- */}
 
+        {/* -----Hero Area Starts------- */}
         <div className="Hero-Content">
+          {/* ----Left Column Starts */}
           <div className="hero-Description">
             <div className="hero-TagLine">
               Best Destinations around the world
@@ -91,11 +96,21 @@ function HeroSection() {
               </div>
             </div>
           </div>
+          {/* ----Left Column Ends--- */}
 
+          {/* ----Right Column Starts--- */}
           <div className="heroImage">
+            <div className="overlayPlaneImg">
+              <img src={PlaneIMG} id="planeIMG1" alt="" />
+              <img src={PlaneIMG} id="planeIMG2" alt="" />
+            </div>
             <img src={Traverler1IMG} id="traveler1IMG" alt="Traverler 1 Img" />
           </div>
+          {/* ----Right Column Ends--- */}
+
         </div>
+        {/* -----Hero Area Ends------- */}
+        
       </div>
     </section>
   );
