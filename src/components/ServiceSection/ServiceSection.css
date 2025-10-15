@@ -1,0 +1,83 @@
+:root {
+  --font-poppins: 'Poppins', sans-serif;
+  --font-volkhov: 'Volkhov', serif;
+}
+
+.serviceSection {
+    margin-top: 50px;
+  /* width: 100vw; */
+  height: 100%;
+  position: relative;
+  padding:20px 90px 0px 90px;
+  /* border: 1px solid greenyellow; */
+}
+.sectionName{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: var(--font-poppins);
+    /* border: 1px solid red; */
+    color: #5E6282;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.serviceHeading{
+    display: flex;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-volkhov);
+    margin-bottom: 50px;
+}
+
+/* ----Service Cards----- */
+.serviceCards{
+    
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid rgb(250, 248, 114); */
+    justify-content: center;
+    gap: 60px;
+}
+.card{
+    width: 180px;
+    /* height: 300px; */
+    /* border: 1px solid blue; */
+    padding: 20px 20px;
+}
+.cardImage{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.cardIMG{
+    max-width: 70px;
+    height: auto;
+    border: 1px solid goldenrod;
+}
+.cardTitle{
+    color: #1E1D4C;
+    font-weight: 550;
+    font-size: 16px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.cardDesc{
+    color: #5E6282;
+    line-height: 23px;
+    font-size: 14px;
+    font-family: var(--font-poppins);
+    font-weight: 550;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
